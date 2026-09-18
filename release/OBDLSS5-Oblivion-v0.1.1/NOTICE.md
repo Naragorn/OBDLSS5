@@ -9,3 +9,5 @@ known licenses or restrictions are recorded in [THIRD-PARTY.md](THIRD-PARTY.md).
 Do not redistribute those files through this package unless the upstream terms
 explicitly allow it.
 
+
+OBDLSS5-owned files are licensed under GNU GPL v3 or later. This does not relicense any dependency or authorize redistribution of dependency files.

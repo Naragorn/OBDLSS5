@@ -54,8 +54,12 @@ anti-cheat-protected online games.
 
 ## File upload
 
-- File name: `OBDLSS5-Oblivion-v0.1.0.zip`
-- Version: `0.1.0`
+- File name: `OBDLSS5-Oblivion-v0.1.1.zip`
+- Version: `0.1.1`
 - Category: Main file
 - SHA-256: see the release asset and `SHA256SUMS.txt`.
 
+
+## License
+
+OBDLSS5-owned files are GNU GPL v3 or later. Third-party dependencies retain their own licenses and are obtained from their official or recorded sources.

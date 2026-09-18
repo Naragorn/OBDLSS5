@@ -1,6 +1,7 @@
 {
   "product": "OBDLSS5 for classic Oblivion",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "license": "GPL-3.0-or-later for OBDLSS5-owned files; third-party components retain their own licenses",
   "status": "experimental",
   "scope": "Oblivion 2006 32-bit, flat screen, D3D9 through dgVoodoo D3D11",
   "public_binary_redistribution": false,

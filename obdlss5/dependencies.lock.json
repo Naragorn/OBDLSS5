@@ -54,7 +54,7 @@
       "pe_architecture": "I386",
       "file_version": null,
       "acquisition_date": null,
-      "license": "unreviewed",
+      "license": "custom-redistribution-terms",
       "required": true,
       "configuration_profile_id": "flat-d3d11-primary",
       "observed_deployed_files_sha256": {

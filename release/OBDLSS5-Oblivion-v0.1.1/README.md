@@ -44,3 +44,5 @@ Third-party binaries are intentionally not mirrored in this public kit. Obtain
 each dependency from its upstream source and place it in the layout described
 in [INSTALL.md](INSTALL.md).
 
+
+The OBDLSS5-authored installer, configuration, documentation and tooling are licensed under GNU GPL v3 or later. Third-party components remain under their own licenses; see [THIRD-PARTY.md](THIRD-PARTY.md).

@@ -1,4 +1,4 @@
-# OBDLSS5 Oblivion v0.1.0
+# OBDLSS5 Oblivion v0.1.1
 
 Experimental public installation kit for classic 32-bit Oblivion.
 
@@ -17,3 +17,5 @@ Experimental public installation kit for classic 32-bit Oblivion.
 - The author's RTX 4090 result uses an experimental SF-v2 NR runtime and is
   not official NVIDIA support.
 - The complete OBDLSS5 A01-A12 specification gate remains partial.
+
+This release changes the license of OBDLSS5-owned files from the initial placeholder MIT notice to GNU GPL v3 or later, matching OBVR. No third-party component is relicensed.
