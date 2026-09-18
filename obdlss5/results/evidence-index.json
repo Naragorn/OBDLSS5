@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "state": "PARTIAL",
+  "profile": "flat-d3d11-primary",
+  "final_build_hash": null,
+  "profile_lock_hash": "dac416313744c3d043d24622844c9ddec26db38970e232e81cf7258f43e2203b",
+  "visual_verdicts": [
+    {
+      "id": "controlled-static-off-on-20260918T1250Z",
+      "status": "QUALIFIED_STATIC_PAIR",
+      "evidence": "obdlss5/results/off-on-comparison-20260918T1250Z.json",
+      "limitation": "Separate clean launches and animated menu background; motion pair not recorded."
+    }
+  ],
+  "final_live_runs": [
+    "h0-dfc2-20260918T0826Z",
+    "h0-sf-v2-live-20260918T0905Z"
+  ],
+  "limitations": [
+    "Primary flat-d3d11 profile is deployed with DFC 2.0.0 CP184, NVIDIA DLSS 310.9.1 and the hash-locked experimental NVIDIA DLSSNR SF-v2 runtime; placement/hash verification passed.",
+    "H0 passes on the observed RTX 4090: DFC reaches ARMED, the SF-v2 runtime creates Feature 18, neural evaluation returns Success, and the host completes synthetic feeder evaluations.",
+    "Real Oblivion ON runs have NR_ACTIVE suite evidence with screenshots; the controlled OFF run explicitly records enabled=0 and no frames fed. host_window=2 is the measured compatibility setting that avoids the earlier black-screen path.",
+    "The controlled static OFF/ON pair is recorded, but motion/lifecycle/host-loss and full A01-A12 release acceptance remain incomplete; the result is PARTIAL, not POC_VERIFIED."
+  ],
+  "preflight": {
+    "profile": "flat-d3d11-preflight",
+    "deploy_status": "APPLIED",
+    "verify_status": "INVENTORIED",
+    "deploy_report": "obdlss5/results/deploy-preflight.json",
+    "verify_report": "obdlss5/results/verify-oblivion-preflight.json",
+    "journal": "D:\\SteamLibrary\\steamapps\\common\\Oblivion\\obdlss5-preflight-install-journal.json",
+    "feed_mode": 1,
+    "existing_dxvk_preserved": true,
+    "profile_digest": "c775b96380948796d3529aeed93d1f6504d67e0137e259b4b570c87a393f00b2",
+    "last_deploy_run_id": "stage-20260918T074900Z-db28f35b2a",
+    "last_verify_run_id": "verify-20260918T074910Z-cd2372c557",
+    "h0_run_id": "h0-final-20260918T0750Z",
+    "h0_exit_code": 1
+  },
+  "acceptance": {
+    "A01": {
+      "status": "BLOCKED_ENVIRONMENT",
+      "evidence": [
+        "obdlss5/results/inventory-oblivion.json",
+        "obdlss5/results/runs/game-20260918T074948Z-ff0b3f03c6/game-suite.json"
+      ]
+    },
+    "A02": {
+      "status": "PASS",
+      "evidence": [
+        "obdlss5/results/runs/h0-sf-v2-live-20260918T0905Z/host-log/dlss5-feed-host.log",
+        "obdlss5/results/runs/h0-sf-v2-live-20260918T0905Z/dfc-log/deep-fried-chicken.log",
+        "obdlss5/results/h0-sf-v2-live-20260918T0905Z-collect.json"
+      ]
+    },
+    "A03": {
+      "status": "PARTIAL",
+      "evidence": [
+        "obdlss5/results/runs/live-game-user-test-20260918T1159Z/screenshots/user-test-primary-live-review.jpg",
+        "obdlss5/results/runs/live-game-user-test-20260918T1159Z/reshade-log/ReShade.log"
+      ]
+    },
+    "A04": {
+      "status": "PARTIAL",
+      "evidence": [
+        "obdlss5/results/runs/live-game-user-test-20260918T1159Z/screenshots/user-test-primary-live-review.jpg"
+      ]
+    },
+    "A05": {
+      "status": "PARTIAL",
+      "evidence": [
+        "obdlss5/results/runs/live-game-user-test-20260918T1159Z/feed-log/dlss5-feed.log",
+        "obdlss5/results/runs/live-game-user-test-20260918T1159Z/host-log/dlss5-feed-host.log"
+      ]
+    },
+    "A06": {
+      "status": "PARTIAL",
+      "evidence": [
+        "obdlss5/results/off-on-comparison-20260918T1250Z.json",
+        "obdlss5/results/runs/live-game-controlled-off-20260918T1247Z/feed-log/dlss5-feed.log",
+        "obdlss5/results/runs/live-game-controlled-off-20260918T1247Z/screenshots/controlled-off.jpg",
+        "obdlss5/results/runs/live-game-controlled-on-20260918T1250Z/live-evidence.json",
+        "obdlss5/results/runs/live-game-controlled-on-20260918T1250Z/screenshots/controlled-on.jpg"
+      ]
+    },
+    "A07": {
+      "status": "PARTIAL",
+      "evidence": [
+        "obdlss5/results/runs/live-game-user-test-20260918T1159Z/feed-log/dlss5-feed.log"
+      ]
+    },
+    "A08": {
+      "status": "PARTIAL",
+      "evidence": [
+        "obdlss5/results/runs/live-game-user-test-20260918T1159Z/live-evidence.json",
+        "obdlss5/results/runs/live-game-user-test-20260918T1159Z/host-log/dlss5-feed-host.log"
+      ]
+    },
+    "A09": {
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    "A10": {
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    "A11": {
+      "status": "PASS_OFFLINE_ONLY",
+      "evidence": [
+        "obdlss5/tests/test_obdlss5.py"
+      ]
+    },
+    "A12": {
+      "status": "PARTIAL",
+      "evidence": [
+        "obdlss5/results/runs/live-game-user-test-20260918T1159Z/host-log/dlss5-feed-host.log"
+      ]
+    }
+  },
+  "primary": {
+    "profile": "flat-d3d11-primary",
+    "deploy_status": "APPLIED",
+    "verify_status": "INVENTORIED",
+    "deploy_report": "obdlss5/results/deploy-primary.json",
+    "verify_report": "obdlss5/results/verify-primary.json",
+    "journal": "D:\\SteamLibrary\\steamapps\\common\\Oblivion\\obdlss5-primary-install-journal.json",
+    "feed_mode": 2,
+    "profile_digest": "187c19c0a3e19ff8fcea8c250b579398bf38be1d5d56800b4ef774c728f64dfd",
+    "deploy_run_id": "stage-20260918T095540Z-428befb1df",
+    "verify_run_id": "verify-20260918T101301Z-2bde89b49e",
+    "h0_run_id": "h0-sf-v2-live-20260918T0905Z",
+    "h0_exit_code": 0,
+    "h0_runtime_state": "NR_ACTIVE"
+  },
+  "real_game_live_runs": [
+    "live-game-primary-nr-20260918T1156Z",
+    "live-game-user-test-20260918T1159Z",
+    "live-game-second-20260918T1227Z",
+    "live-game-controlled-on-20260918T1250Z"
+  ]
+}

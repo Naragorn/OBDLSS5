@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-18T10:18:00Z",
+  "state": "PARTIAL",
+  "entries": [
+    {
+      "id": "repo-mapping",
+      "claim": "The supplied checkout contains only OBDLSS5_SPEC.md and OBDLSS5_LUNA_PROMPT.md and is not a Git repository.",
+      "status": "VERIFIED",
+      "evidence": [
+        "filesystem inspection on 2026-09-18",
+        "git status returned not a git repository"
+      ]
+    },
+    {
+      "id": "spec",
+      "claim": "OBDLSS5 scope, profile, dependency candidates, frame contract, acceptance rows and mandatory fail-closed test policy.",
+      "status": "VERIFIED",
+      "evidence": [
+        "obdlss5/docs/OBDLSS5_SPEC.md",
+        "OBDLSS5_SPEC.md"
+      ]
+    },
+    {
+      "id": "feeder-architecture",
+      "claim": "The selected pinned Feeder architecture separates an x86 client from an x64 host and requires DLAA transport before a neural consumer can be evidenced.",
+      "status": "VERIFIED_WITH_SOURCE_CONFLICT",
+      "evidence": [
+        "OBDLSS5_SPEC.md sections 2, 7 and 12",
+        "https://github.com/jlrouzies-fr/DLSS5-Feeder",
+        "DeepWiki query retrieved 2026-09-18"
+      ],
+      "limitation": "DeepWiki returned protocol version 1 while the specification's pinned feed_ipc.h evidence states version 9. The pinned specification is trusted for this implementation; no local upstream checkout was supplied to resolve the conflict."
+    },
+    {
+      "id": "python-cli",
+      "claim": "The CLI uses Python standard-library argparse, pathlib, hashlib, json, subprocess and unittest-compatible patterns.",
+      "status": "VERIFIED",
+      "evidence": [
+        "Context7 /python/cpython/v3.11.14 retrieved 2026-09-18",
+        "obdlss5/tools/obdlss5.py"
+      ]
+    },
+    {
+      "id": "offline-tests",
+      "claim": "Offline unit and integration tests pass on the exact current source tree.",
+      "status": "VERIFIED",
+      "evidence": [
+        "obdlss5/tests/test_obdlss5.py",
+        "Python 3.12.14 test command output"
+      ]
+    },
+    {
+      "id": "third-party-runtime",
+      "claim": "DFC 2.0.0, NVIDIA DLSS 310.9.1 and the experimental NVIDIA DLSSNR 310.8.SF-v2 runtime are hash-locked, deployed and loaded by the H0 host; the SF-v2 runtime passes Feature-18 neural creation/evaluation on the observed RTX 4090.",
+      "status": "VERIFIED",
+      "evidence": [
+        "obdlss5/dependencies.lock.json",
+        "obdlss5/results/deploy-primary.json",
+        "obdlss5/results/verify-primary.json",
+        "obdlss5/results/runs/h0-sf-v2-live-20260918T0905Z/host-log/dlss5-feed-host.log",
+        "obdlss5/results/runs/h0-sf-v2-live-20260918T0905Z/dfc-log/deep-fried-chicken.log"
+      ],
+      "limitation": "The SF-v2 runtime is an external, experimental, unreviewed binary; the H0 result does not establish full game acceptance or redistribution permission."
+    },
+    {
+      "id": "live-poc",
+      "claim": "The primary stack now has a real Oblivion run on the RTX 4090 with visible Feed status and same-run evidence of standalone DLSSNR initialization, Feature-18 creation and repeated successful neural frames; full A01-A12 acceptance remains incomplete.",
+      "status": "PARTIAL",
+      "evidence": [
+        "D:\\SteamLibrary\\steamapps\\common\\Oblivion\\Oblivion.exe",
+        "obdlss5/results/verify-primary-live.json",
+        "obdlss5/results/runs/live-game-user-test-20260918T1159Z/live-evidence.json",
+        "obdlss5/results/runs/live-game-user-test-20260918T1159Z/dfc-log/deep-fried-chicken.log",
+        "obdlss5/results/runs/live-game-user-test-20260918T1159Z/host-log/dlss5-feed-host.log",
+        "obdlss5/results/runs/live-game-user-test-20260918T1159Z/screenshots/user-test-primary-live-review.jpg"
+      ],
+      "limitation": "The stored screenshots are ON-state captures; a matched OFF/ON pair, visual verdict artifact, lifecycle matrix and full A01-A12 release gate are still required."
+    },
+    {
+      "id": "real-install",
+      "claim": "The selected classic Oblivion installation is PE32/I386; the mode=2 primary profile with DFC 2.0.0 and NGX runtimes was applied with an owned journal; the existing d3d9.dll.dxvk was preserved.",
+      "status": "VERIFIED",
+      "evidence": [
+        "obdlss5/results/inventory-oblivion.json",
+        "obdlss5/results/deploy-primary.json",
+        "obdlss5/results/verify-primary.json",
+        "D:\\SteamLibrary\\steamapps\\common\\Oblivion\\obdlss5-primary-install-journal.json"
+      ]
+    },
+    {
+      "id": "official-assets",
+      "claim": "Feeder beta.4, dgVoodoo 2.87.5, ReShade Add-on 6.8.0, ReShade headers and the pinned LumeniteFX tree were retrieved from named sources and their local hashes are locked.",
+      "status": "VERIFIED",
+      "evidence": [
+        "obdlss5/dependencies.lock.json",
+        "obdlss5/results/preflight-stage-dry-run/stage.json"
+      ]
+    },
+    {
+      "id": "host-h0",
+      "claim": "The primary x64 host H0 ran with DFC 2.0.0, NVIDIA DLSS 310.9.1 and experimental NVIDIA DLSSNR 310.8.SF-v2, identified the RTX 4090 and driver 616.92, reached DFC ARMED, created Feature 18, evaluated the neural feature successfully, and completed 300/300 synthetic evaluations.",
+      "status": "VERIFIED",
+      "evidence": [
+        "obdlss5/results/runs/h0-sf-v2-live-20260918T0905Z/host-log/dlss5-feed-host.log",
+        "obdlss5/results/runs/h0-sf-v2-live-20260918T0905Z/dfc-log/deep-fried-chicken.log",
+        "obdlss5/results/h0-sf-v2-live-20260918T0905Z-collect.json"
+      ],
+      "limitation": "H0 proves the experimental runtime/DFC neural path on the synthetic host contract; it does not prove the real game startup path, visual quality or A01-A12 acceptance."
+    }
+  ],
+  "source_records": [
+    {
+      "service": "Exa",
+      "retrieved": "2026-09-18",
+      "query": "DLSS5-Feeder v1.16.0-beta.4 pinned commit and IPC/deployment",
+      "result": "https://github.com/jlrouzies-fr/DLSS5-Feeder"
+    },
+    {
+      "service": "DeepWiki",
+      "retrieved": "2026-09-18",
+      "repository": "jlrouzies-fr/DLSS5-Feeder",
+      "result": "https://deepwiki.com/search/for-the-pinned-feeder-architec_a402b775-4d24-4dc6-8b16-87d04f7f6ec2"
+    },
+    {
+      "service": "Context7",
+      "retrieved": "2026-09-18",
+      "library": "/python/cpython/v3.11.14",
+      "result": "Python standard-library CLI and unittest documentation"
+    },
+    {
+      "service": "Exa",
+      "retrieved": "2026-09-18",
+      "query": "DLSS5-Feeder v1.16.0-beta.4 official release and deployment",
+      "result": "https://github.com/jlrouzies-fr/DLSS5-Feeder/releases/tag/v1.16.0-beta.4"
+    },
+    {
+      "service": "Exa",
+      "retrieved": "2026-09-18",
+      "query": "dgVoodoo2 v2.87.5 official release",
+      "result": "https://github.com/dege-diosg/dgVoodoo2/releases/tag/v2.87.5"
+    },
+    {
+      "service": "web",
+      "retrieved": "2026-09-18",
+      "query": "ReShade 6.8.0 Add-on official download",
+      "result": "https://reshade.me/component/content/featured?Itemid=101"
+    },
+    {
+      "service": "Exa",
+      "retrieved": "2026-09-18",
+      "query": "LumeniteFX pinned tree and kernel installation",
+      "result": "https://github.com/umar-afzaal/LumeniteFX/tree/f8cbbb4eccfcb7adf0d74bb358ba349272e3c1e9"
+    },
+    {
+      "service": "Exa",
+      "retrieved": "2026-09-18",
+      "query": "DFC and NVIDIA runtime provenance",
+      "result": "https://github.com/jlrouzies-fr/DLSS5-Feeder"
+    },
+    {
+      "service": "official DLSS5-Feeder installer",
+      "retrieved": "2026-09-18",
+      "query": "Pinned NVIDIA runtime source URLs used for the primary H0",
+      "result": "https://github.com/jlrouzies-fr/DLSS5-Feeder/blob/main/tools/Install-DLSS5Feeder.ps1"
+    },
+    {
+      "service": "RankFTW/rhi-repo",
+      "retrieved": "2026-09-18",
+      "query": "nvngx_dlssnr 310.8.0 and nvngx_dlss 310.9.1 archives",
+      "result": "https://github.com/RankFTW/rhi-repo/releases"
+    }
+  ]
+}

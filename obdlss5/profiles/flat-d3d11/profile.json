@@ -1,0 +1,281 @@
+{
+  "id": "flat-d3d11-primary",
+  "scope": "classic-oblivion-flat-only",
+  "view_count": 1,
+  "pipeline": "Oblivion.exe (x86/D3D9) -> dgVoodoo D3D11 -> ReShade x86 -> Lumenite Kernel -> DLSS5 Feed -> addon32 -> host64 D3D12/DFC 2.0 -> Flat present",
+  "settings": {
+    "resolution": "1920x1080",
+    "window_mode": "windowed",
+    "display_output": "SDR",
+    "work_resolution_percent": 100,
+    "async_home": 0,
+    "msaa": false,
+    "ssaa": false,
+    "frame_generation": false,
+    "smooth_motion": false,
+    "host_jitter": [
+      0,
+      0
+    ]
+  },
+  "files": [
+    {
+      "role": "dgvoodoo_d3d9_x86",
+      "component": "dgvoodoo2",
+      "destination": "D3D9.dll",
+      "architecture": "I386",
+      "required": true
+    },
+    {
+      "role": "reshade_x86",
+      "component": "reshade_x86",
+      "destination": "dxgi.dll",
+      "architecture": "I386",
+      "required": true
+    },
+    {
+      "role": "feeder_addon32",
+      "component": "feeder",
+      "destination": "dlss5-feed.addon32",
+      "architecture": "I386",
+      "required": true
+    },
+    {
+      "role": "feeder_shader",
+      "component": "feeder_shader",
+      "destination": "reshade-shaders/Shaders/DLSS5_Feed.fx",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "reshade_header_core",
+      "component": "reshade_shaders",
+      "destination": "reshade-shaders/Shaders/ReShade.fxh",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "reshade_header_ui",
+      "component": "reshade_shaders",
+      "destination": "reshade-shaders/Shaders/ReShadeUI.fxh",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "reshade_header_text",
+      "component": "reshade_shaders",
+      "destination": "reshade-shaders/Shaders/DrawText.fxh",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "lumenite_anamorphic_bloom",
+      "component": "lumenitefx",
+      "destination": "reshade-shaders/Shaders/lumenite_AnamorphicBloom.fx",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "lumenite_kernel",
+      "component": "lumenitefx",
+      "destination": "reshade-shaders/Shaders/lumenite_Kernel.fx",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "lumenite_lsao",
+      "component": "lumenitefx",
+      "destination": "reshade-shaders/Shaders/lumenite_LSAO.fx",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "lumenite_quant_ao",
+      "component": "lumenitefx",
+      "destination": "reshade-shaders/Shaders/lumenite_QuantAO.fx",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "lumenite_quant_motion",
+      "component": "lumenitefx",
+      "destination": "reshade-shaders/Shaders/lumenite_QuantMotion.fx",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "lumenite_rtao",
+      "component": "lumenitefx",
+      "destination": "reshade-shaders/Shaders/lumenite_RTAO.fx",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "lumenite_sssr",
+      "component": "lumenitefx",
+      "destination": "reshade-shaders/Shaders/lumenite_SSSR.fx",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "lumenite_traa",
+      "component": "lumenitefx",
+      "destination": "reshade-shaders/Shaders/lumenite_TRAA.fx",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "lumenite_color_management",
+      "component": "lumenitefx",
+      "destination": "reshade-shaders/Shaders/include/lumenite_ColorManagement.fxh",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "lumenite_compute",
+      "component": "lumenitefx",
+      "destination": "reshade-shaders/Shaders/include/lumenite_Compute.fxh",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "lumenite_helpers",
+      "component": "lumenitefx",
+      "destination": "reshade-shaders/Shaders/include/lumenite_Helpers.fxh",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "lumenite_projections",
+      "component": "lumenitefx",
+      "destination": "reshade-shaders/Shaders/include/lumenite_Projections.fxh",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "lumenite_bluenoise",
+      "component": "lumenitefx",
+      "destination": "reshade-shaders/Textures/lumenite_bluenoise256.png",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "feeder_host64",
+      "component": "feeder",
+      "destination": "host64/dlss5-feed-host64.exe",
+      "architecture": "AMD64",
+      "required": true
+    },
+    {
+      "role": "reshade_x64",
+      "component": "reshade_x64",
+      "destination": "host64/dxgi.dll",
+      "architecture": "AMD64",
+      "required": true
+    },
+    {
+      "role": "dgvoodoo_control_x86",
+      "component": "dgvoodoo2",
+      "destination": "dgVoodooCpl.exe",
+      "architecture": "I386",
+      "required": false
+    },
+    {
+      "role": "dfc_addon64",
+      "component": "dfc",
+      "destination": "host64/deep-fried-chicken.addon64",
+      "architecture": "AMD64",
+      "required": true
+    },
+    {
+      "role": "dfc_bridge64",
+      "component": "dfc",
+      "destination": "host64/deep-fried-chicken-nvngx.dll",
+      "architecture": "AMD64",
+      "required": true
+    },
+    {
+      "role": "dfc_config",
+      "component": "dfc",
+      "destination": "host64/deep-fried-chicken.cfg",
+      "architecture": null,
+      "required": true
+    },
+    {
+      "role": "nvidia_nr64",
+      "component": "nvidia_nr",
+      "destination": "host64/nvngx_dlssnr.dll",
+      "architecture": "AMD64",
+      "required": true
+    },
+    {
+      "role": "nvidia_dlss64",
+      "component": "nvidia_dlss",
+      "destination": "host64/nvngx_dlss.dll",
+      "architecture": "AMD64",
+      "required": true
+    }
+  ],
+  "ini_updates": {
+    "dgVoodoo.conf": {
+      "General": {
+        "OutputAPI": "d3d11_fl11_0"
+      },
+      "DirectX": {
+        "DisableAndPassThru": "false",
+        "VideoCard": "internal3D",
+        "VRAM": "1GB",
+        "dgVoodooWatermark": "true"
+      }
+    },
+    "ReShadePreset.ini": {
+      "": {
+        "Techniques": "Lumenite_Kernel@lumenite_Kernel.fx,DLSS5_Feed@DLSS5_Feed.fx",
+        "TechniqueSorting": "Lumenite_Kernel@lumenite_Kernel.fx,DLSS5_Feed@DLSS5_Feed.fx"
+      },
+      "DLSS5_Feed.fx": {
+        "PreprocessorDefinitions": "DLSS5_MV_PROVIDER=3"
+      }
+    },
+    "ReShade.ini": {
+      "GENERAL": {
+        "EffectSearchPaths": "D:\\SteamLibrary\\steamapps\\common\\Oblivion\\reshade-shaders\\Shaders",
+        "TextureSearchPaths": "D:\\SteamLibrary\\steamapps\\common\\Oblivion\\reshade-shaders\\Textures",
+        "PresetPath": "D:\\SteamLibrary\\steamapps\\common\\Oblivion\\ReShadePreset.ini"
+      }
+    },
+    "host64/ReShade.ini": {
+      "GENERAL": {
+        "PresetPath": ".\\ReShadePreset.ini"
+      }
+    }
+  },
+  "flat_key_updates": {
+    "dlss5-feed.cfg": {
+      "enabled": 1,
+      "mode": 2,
+      "hdr": -1,
+      "depth_inverted": -1,
+      "flags": -1,
+      "reset_every": 0,
+      "host_window": 2,
+      "host_gpu_priority": 0,
+      "work_resolution": 100,
+      "work_upscale": 0,
+      "async_home": 0,
+      "mv_scale_x": 1.0,
+      "mv_scale_y": 1.0
+    }
+  },
+  "limitations": [
+    "This profile is transport-only and intentionally sets mode=1; it cannot establish DLSS, DLAA or neural rendering.",
+    "The profile does not include DFC or NVIDIA NGX binaries because their exact provenance and hashes are not available.",
+    "The selected x86 IPC contract has no trust-mask slot; mask availability to the neural host is false."
+  ],
+  "consumer": {
+    "name": "Deep Fried Chicken",
+    "release": "2.0.0-CP184-Performance-Matched-Residual",
+    "role": "external-feeder-neural-consumer",
+    "source": "user-supplied-local-package"
+  }
+}

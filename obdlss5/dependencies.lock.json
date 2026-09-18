@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "profile_id": "flat-d3d11-primary",
+  "lock_policy": "Selected candidates are not tested compatibility claims. Required artifacts with null observed/expected deployed hashes are refused by staging.",
+  "components": [
+    {
+      "name": "feeder",
+      "source_url": "https://github.com/jlrouzies-fr/DLSS5-Feeder/releases/tag/v1.16.0-beta.4",
+      "release": "v1.16.0-beta.4",
+      "commit": "53f88d4be93ae48e7e1ba5ef7a4f7d87618843ff",
+      "expected_archive_sha256": "d16f8b527f76ff1f531682a576d699cb5634838c0e2899585e3671814eda2745",
+      "observed_archive_sha256": "d16f8b527f76ff1f531682a576d699cb5634838c0e2899585e3671814eda2745",
+      "expected_deployed_sha256": null,
+      "observed_deployed_sha256": null,
+      "pe_architecture": "mixed",
+      "file_version": null,
+      "acquisition_date": null,
+      "license": "MIT",
+      "required": true,
+      "configuration_profile_id": "flat-d3d11-primary",
+      "observed_deployed_files_sha256": {
+        "feeder_addon32": "0e1604137027c00884222d811f7f03ac0bb0120c89ced4368f4453f6cc70ba2d",
+        "feeder_host64": "ad60a068a5c3cbf1ba87cc7af3191a93d0b3312486ed26d6b3b5881c828f23fa"
+      }
+    },
+    {
+      "name": "feeder_shader",
+      "source_url": "https://github.com/jlrouzies-fr/DLSS5-Feeder/tree/53f88d4be93ae48e7e1ba5ef7a4f7d87618843ff/shaders",
+      "release": "v1.16.0-beta.4",
+      "commit": "53f88d4be93ae48e7e1ba5ef7a4f7d87618843ff",
+      "expected_archive_sha256": null,
+      "observed_archive_sha256": null,
+      "expected_deployed_sha256": null,
+      "observed_deployed_sha256": null,
+      "pe_architecture": null,
+      "file_version": null,
+      "acquisition_date": null,
+      "license": "MIT",
+      "required": true,
+      "configuration_profile_id": "flat-d3d11-primary",
+      "observed_deployed_files_sha256": {
+        "feeder_shader": "cdac08a721b14b97187dd86c5b5bead157c9063d7ee859a0f131a8ee791695f1"
+      }
+    },
+    {
+      "name": "dgvoodoo2",
+      "source_url": "https://github.com/dege-diosg/dgVoodoo2/releases/tag/v2.87.5",
+      "release": "v2.87.5",
+      "commit": null,
+      "expected_archive_sha256": "5ffde6927f7355ca3fdd5d785b581256a8e6539fa13e395a891ade6ba1040850",
+      "observed_archive_sha256": "5ffde6927f7355ca3fdd5d785b581256a8e6539fa13e395a891ade6ba1040850",
+      "expected_deployed_sha256": null,
+      "observed_deployed_sha256": null,
+      "pe_architecture": "I386",
+      "file_version": null,
+      "acquisition_date": null,
+      "license": "unreviewed",
+      "required": true,
+      "configuration_profile_id": "flat-d3d11-primary",
+      "observed_deployed_files_sha256": {
+        "dgvoodoo_d3d9_x86": "6a0ca214784be04b7c8b547105aa9d79acf4dc26c0b6f8702b437ddca54058b2"
+      }
+    },
+    {
+      "name": "reshade_x86",
+      "source_url": "https://reshade.me/",
+      "release": "6.8.0",
+      "commit": null,
+      "expected_archive_sha256": null,
+      "observed_archive_sha256": "afe4c8f13048306307983b8b3d41d5bf00a86820440b0e57dea10950e1176445",
+      "expected_deployed_sha256": null,
+      "observed_deployed_sha256": null,
+      "pe_architecture": "I386",
+      "file_version": null,
+      "acquisition_date": null,
+      "license": "BSD-3-Clause",
+      "required": true,
+      "configuration_profile_id": "flat-d3d11-primary",
+      "observed_deployed_files_sha256": {
+        "reshade_x86": "da430e0a9c6eecefa0d1b27d05e16c426fb5d04e808b194d914eaac4b31bc0f8"
+      }
+    },
+    {
+      "name": "reshade_x64",
+      "source_url": "https://reshade.me/",
+      "release": "6.8.0",
+      "commit": null,
+      "expected_archive_sha256": null,
+      "observed_archive_sha256": "afe4c8f13048306307983b8b3d41d5bf00a86820440b0e57dea10950e1176445",
+      "expected_deployed_sha256": null,
+      "observed_deployed_sha256": null,
+      "pe_architecture": "AMD64",
+      "file_version": null,
+      "acquisition_date": null,
+      "license": "BSD-3-Clause",
+      "required": true,
+      "configuration_profile_id": "flat-d3d11-primary",
+      "observed_deployed_files_sha256": {
+        "reshade_x64": "0cee63f9c9f13f3ac909c5b4903f4dbb4b719a7ab3b4f13b0deaf83c814b94f7"
+      }
+    },
+    {
+      "name": "lumenitefx",
+      "source_url": "https://github.com/umar-afzaal/LumeniteFX/tree/f8cbbb4eccfcb7adf0d74bb358ba349272e3c1e9",
+      "release": "mainline-pinned-tree",
+      "commit": "f8cbbb4eccfcb7adf0d74bb358ba349272e3c1e9",
+      "expected_archive_sha256": null,
+      "observed_archive_sha256": "43220f99fc0ffa0216e01ebd657180f8c9d043c939f760283b896ea257f1b6a2",
+      "expected_deployed_sha256": null,
+      "observed_deployed_sha256": null,
+      "pe_architecture": null,
+      "file_version": null,
+      "acquisition_date": null,
+      "license": "AGNYA",
+      "required": true,
+      "configuration_profile_id": "flat-d3d11-primary",
+      "observed_deployed_files_sha256": {
+        "lumenite_kernel": "dc44d101c568a8492606884037c86059a31b844fd5e144e733fb70dabc91f25c",
+        "lumenite_bluenoise": "2ad9e5b0bd28ddff569dbd756a551fe8e681b67eb72a83bb027434e1be24122b",
+        "lumenite_anamorphic_bloom": "cbb145eadd884c8d2c903e51f85103eb2317677612fa7cfe6f2f6a9929aae3ee",
+        "lumenite_lsao": "620d01d7f7d011edcd23be478c1688c2fc547a7670e34803b942c5fb7b32eed5",
+        "lumenite_quant_ao": "8deb70e440e1cd94a34c48f14554a23631ce5cad713b0fefef5b544974ca47c1",
+        "lumenite_quant_motion": "4a27b2f3676cd836e460be3bb7a094cbf7ddd74e29b19d88ff7381066fcb94d8",
+        "lumenite_rtao": "6edf4fff7a85afb8d417546b791b21b563a3189143ecea089a4cb2fb1b42f5f9",
+        "lumenite_sssr": "d372bb671ba69e5cd95eb7f36ad8281f0c150cfc32eb5ada3895810a16543dd4",
+        "lumenite_traa": "2d9261686a83131af838692bf7273d24a85ead8d9047f943d1227757608ecd4e",
+        "lumenite_color_management": "116d3c41cd48f7787a2ed87eefc65fb2d9083fc1ab609766a3fbcca3e62649a6",
+        "lumenite_compute": "736e3f39fc0c48a405c4d10b0d158502009db940e2673ff778e6b919d3c1a55f",
+        "lumenite_helpers": "8826d613944be27e14095982b20098fff6d45e91c7d4028473c2f5b784c80028",
+        "lumenite_projections": "709ec414649b74e573ca0f12a5ef25998d332238f7cab14a3d91053c8d388cab"
+      }
+    },
+    {
+      "name": "dfc",
+      "source_url": "https://discord.gg/g2v2XGqvR",
+      "release": "2.0.0-CP184-Performance-Matched-Residual",
+      "commit": null,
+      "expected_archive_sha256": null,
+      "observed_archive_sha256": null,
+      "expected_deployed_sha256": null,
+      "observed_deployed_sha256": null,
+      "pe_architecture": "AMD64",
+      "file_version": "2.0.0",
+      "acquisition_date": "2026-09-18",
+      "license": "unreviewed",
+      "required": true,
+      "configuration_profile_id": "flat-d3d11-primary",
+      "source_note": "User-supplied local package: Deep-Fried-Chicken-v2.0.0-CP184-Performance-Matched-Residual. README states external DLSS5 Feeder support and lists the exact three payload files. Hashes are recorded from the supplied folder; compatibility still requires H0.",
+      "observed_deployed_files_sha256": {
+        "dfc_addon64": "c99c35287f838aa9c0ae8b42ad1d6a616dfba804d153f8ffb4a24f8d9f24f303",
+        "dfc_bridge64": "9350e044efab5ca97a92a94236b7f1df55d866d1aa4b8496eabe3765b43394ff",
+        "dfc_config": "a52a51ea6ae41f85aba7f4397d8068e8b72f6c931f714b60e1076793f236a9ad"
+      }
+    },
+    {
+      "name": "nvidia_nr",
+      "source_url": "https://github.com/RankFTW/rhi-repo/releases/download/dlssnr-310.8.SF-v2/nvngx_dlssnr_310.8.SF-v2.zip",
+      "release": "dlssnr-310.8.SF-v2",
+      "commit": null,
+      "expected_archive_sha256": null,
+      "observed_archive_sha256": "1da35941894994eb087e017577829e492454e9bae3a6a9397027069ceb74955c",
+      "expected_deployed_sha256": null,
+      "observed_deployed_sha256": null,
+      "pe_architecture": "AMD64",
+      "file_version": "310.8.SF.0",
+      "acquisition_date": "2026-09-18",
+      "license": "unreviewed",
+      "required": true,
+      "configuration_profile_id": "flat-d3d11-primary",
+      "source_note": "Published SF-v2 experimental NR runtime candidate from RankFTW/RHI manifest; the normal 310.8.0 runtime rejected Feature 18 on this RTX 4090, while this candidate passed isolated H0 with Feature 18 creation and neural evaluation. Provenance is external/unreviewed and remains tied to the recorded archive hash.",
+      "observed_deployed_files_sha256": {
+        "nvidia_nr64": "6eb209e764f39872625debd6abaf45e2bb6322f6f270f781f70c059ae30b3927"
+      }
+    },
+    {
+      "name": "nvidia_dlss",
+      "source_url": "https://github.com/RankFTW/rhi-repo/releases/download/dlss-310.9.1/nvngx_dlss_310.9.1.zip",
+      "release": "dlss-310.9.1",
+      "commit": null,
+      "expected_archive_sha256": null,
+      "observed_archive_sha256": "aaba83b288bd145c3808e8d7a0ba03cc8c8676d18ad984b1bfa6563046a3ba37",
+      "expected_deployed_sha256": null,
+      "observed_deployed_sha256": null,
+      "pe_architecture": "AMD64",
+      "file_version": null,
+      "acquisition_date": "2026-09-18",
+      "license": "unreviewed",
+      "required": true,
+      "configuration_profile_id": "flat-d3d11-primary",
+      "source_note": "Archive URL is pinned by the official DLSS5-Feeder installer; binary provenance is recorded from the downloaded archive and remains subject to H0 runtime validation.",
+      "observed_deployed_files_sha256": {
+        "nvidia_dlss64": "3975567b8943c53acce397f2b72380092f84f162d00b0d2c7d08a1025c563983"
+      }
+    },
+    {
+      "name": "driver",
+      "source_url": null,
+      "release": "record-installed-version",
+      "commit": null,
+      "expected_archive_sha256": null,
+      "observed_archive_sha256": null,
+      "expected_deployed_sha256": null,
+      "observed_deployed_sha256": null,
+      "pe_architecture": null,
+      "file_version": null,
+      "acquisition_date": null,
+      "license": "unreviewed",
+      "required": false,
+      "configuration_profile_id": "flat-d3d11-primary"
+    },
+    {
+      "name": "dxvk_optional",
+      "source_url": "https://github.com/doitsujin/dxvk/releases",
+      "release": "3.0.2",
+      "commit": null,
+      "expected_archive_sha256": null,
+      "observed_archive_sha256": null,
+      "expected_deployed_sha256": null,
+      "observed_deployed_sha256": null,
+      "pe_architecture": "I386",
+      "file_version": null,
+      "acquisition_date": null,
+      "license": "zlib",
+      "required": false,
+      "configuration_profile_id": "flat-dxvk-fallback"
+    },
+    {
+      "name": "reshade_shaders",
+      "source_url": "https://github.com/crosire/reshade-shaders/tree/slim",
+      "release": "slim",
+      "commit": "slim",
+      "expected_archive_sha256": null,
+      "observed_archive_sha256": null,
+      "expected_deployed_sha256": null,
+      "observed_deployed_sha256": null,
+      "pe_architecture": null,
+      "file_version": null,
+      "acquisition_date": "2026-09-18",
+      "license": "unreviewed",
+      "required": true,
+      "configuration_profile_id": "flat-d3d11-preflight",
+      "observed_deployed_files_sha256": {
+        "reshade_header_core": "6dabfbbaf968c3871905d2ea17f96572ff7b1cec01310b5d0e5252b66b30174f",
+        "reshade_header_ui": "78adf672df47460297eb9fe6dd238d2aafa24510b52b84feb1a745dff70eb901",
+        "reshade_header_text": "b79cc4dfb3e98bcf4c06193d00ea7631d74f467f73a4deeeee13e71336d3e680"
+      }
+    }
+  ]
+}

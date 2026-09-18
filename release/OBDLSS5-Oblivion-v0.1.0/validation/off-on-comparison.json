@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "RECORDED",
+  "profile": "flat-d3d11-primary",
+  "off": {
+    "feed_config": "enabled=0",
+    "screenshot": "screenshots/controlled-off.jpg",
+    "assertion": "No frames are fed, no runtime is queried, no textures are created and the Vulkan interop hook is not installed."
+  },
+  "on": {
+    "feed_config": "enabled=1",
+    "screenshot": "screenshots/controlled-on.jpg",
+    "assertion": "NR_ACTIVE with feed delivery, host evaluation, GPU timing and DFC neural evidence."
+  },
+  "visual_verdict": "QUALIFIED_STATIC_PAIR",
+  "limitations": [
+    "OFF and ON are separate clean launches.",
+    "No motion-capture pair was recorded.",
+    "Full A01-A12 acceptance remains partial."
+  ]
+}

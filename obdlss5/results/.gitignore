@@ -1,0 +1,10 @@
+runs/*/captures/
+runs/*/*.png
+runs/*/*.jpg
+runs/*/*.bmp
+runs/*/*.mp4
+runs/*/*.log
+!evidence-index.json
+!evidence-ledger.json
+!run-history.json
+procurement/

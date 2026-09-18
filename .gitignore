@@ -1,0 +1,14 @@
+# Local test and procurement material. Public releases link to upstream
+# dependencies instead of mirroring third-party binaries.
+obdlss5/results/**
+!obdlss5/results/.gitignore
+obdlss5/__pycache__/
+**/__pycache__/
+release/**/Dependencies/
+release/_installer-test-fixture/
+
+# Local editor and operating-system files.
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

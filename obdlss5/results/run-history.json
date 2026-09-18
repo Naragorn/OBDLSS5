@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "runs": [
+    {
+      "run_id": "offline-initial",
+      "type": "offline",
+      "status": "PASS",
+      "suites": {
+        "unit": 10,
+        "integration": 2
+      },
+      "runtime": "Python 3.12.14",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "live-not-run",
+      "type": "game",
+      "status": "BLOCKED_ENVIRONMENT",
+      "reason": "No game installation or required runtime binaries supplied",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "test-20260918T070621Z-7b12324428",
+      "type": "full-suite",
+      "status": "FAILED_OR_BLOCKED",
+      "suites": {
+        "unit": 13,
+        "integration": 2,
+        "game": "BLOCKED_ENVIRONMENT"
+      },
+      "runtime": "Python 3.12.14",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "test-20260918T071058Z-a5a6ffe000",
+      "type": "full-suite-final",
+      "status": "FAILED_OR_BLOCKED",
+      "suites": {
+        "unit": 13,
+        "integration": 2,
+        "game": "BLOCKED_ENVIRONMENT"
+      },
+      "runtime": "Python 3.12.14",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "harness-launch-smoke",
+      "type": "synthetic-harness",
+      "status": "BLOCKED_ENVIRONMENT",
+      "suites": {
+        "launch": "PASS",
+        "readiness": "PASS",
+        "acceptance": "BLOCKED_ENVIRONMENT"
+      },
+      "runtime": "Python 3.12.14",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "test-20260918T071525Z-60f0ce71ac",
+      "type": "full-suite-final",
+      "status": "FAILED_OR_BLOCKED",
+      "suites": {
+        "unit": 15,
+        "integration": 2,
+        "game": "BLOCKED_ENVIRONMENT"
+      },
+      "runtime": "Python 3.12.14",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "inventory-20260918T073211Z-4aacf6708e",
+      "type": "inventory",
+      "status": "PASS",
+      "profile": "flat-d3d11-preflight",
+      "target": "D:\\SteamLibrary\\steamapps\\common\\Oblivion",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "stage-20260918T073244Z-78fbe86247",
+      "type": "preflight-deploy",
+      "status": "APPLIED",
+      "profile": "flat-d3d11-preflight",
+      "target": "D:\\SteamLibrary\\steamapps\\common\\Oblivion",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "verify-20260918T073301Z-50a37f2714",
+      "type": "preflight-verify",
+      "status": "INVENTORIED",
+      "profile": "flat-d3d11-preflight",
+      "live_behavior": "NOT_RUN",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "h0-20260918T073337Z",
+      "type": "host-h0",
+      "status": "BLOCKED_DEPENDENCY",
+      "exit_code": 1,
+      "reason": "DFC and NVIDIA NGX runtimes absent; host log reports NGX unavailable",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "game-20260918T073456Z-6f5597037b",
+      "type": "game-preflight",
+      "status": "BLOCKED_ENVIRONMENT",
+      "profile": "flat-d3d11-preflight",
+      "reason": "No explicit launch/readiness contract supplied; H0 separately blocked on dependencies",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "test-20260918T073456Z-c1653c0d2c",
+      "type": "full-suite-preflight",
+      "status": "FAILED_OR_BLOCKED",
+      "suites": {
+        "unit": 15,
+        "integration": 2,
+        "game": "BLOCKED_ENVIRONMENT"
+      },
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "h0-final-20260918T0744Z",
+      "type": "host-h0-final",
+      "status": "BLOCKED_DEPENDENCY",
+      "exit_code": 1,
+      "log_sha256": "4dd026b95b6752f50ecde4123160d536f603c457232ac531429e94c450105f18",
+      "reason": "DFC and NVIDIA NGX runtimes absent; host log reports NGX unavailable",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "stage-20260918T074452Z-36d2a6cdc2",
+      "type": "preflight-deploy-final",
+      "status": "APPLIED",
+      "profile": "flat-d3d11-preflight",
+      "lock_digest": "edc43eeae1fe9081eaf8efb89299dbae981f745e7081be057aa25564be82a84b",
+      "target": "D:\\SteamLibrary\\steamapps\\common\\Oblivion",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "verify-20260918T074503Z-fcec5a20bd",
+      "type": "preflight-verify-final",
+      "status": "INVENTORIED",
+      "profile": "flat-d3d11-preflight",
+      "lock_digest": "edc43eeae1fe9081eaf8efb89299dbae981f745e7081be057aa25564be82a84b",
+      "failures": 0,
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "game-20260918T074514Z-99ee1eae6e",
+      "type": "game-preflight-final",
+      "status": "BLOCKED_ENVIRONMENT",
+      "profile": "flat-d3d11-preflight",
+      "reason": "No explicit launch/readiness contract supplied; A01-A12 not run",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "test-20260918T074514Z-88cfc40e0b",
+      "type": "full-suite-preflight-final",
+      "status": "FAILED_OR_BLOCKED",
+      "suites": {
+        "unit": 15,
+        "integration": 2,
+        "game": "BLOCKED_ENVIRONMENT"
+      },
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "h0-final-20260918T0750Z",
+      "type": "host-h0-final",
+      "status": "BLOCKED_DEPENDENCY",
+      "exit_code": 1,
+      "log_sha256": "73adf07e9bb98025c46d670c4017d745e02377824ac68099e6ec69cdc001744b",
+      "reason": "DFC and NVIDIA NGX runtimes absent; host log reports NGX unavailable",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "stage-20260918T074900Z-db28f35b2a",
+      "type": "preflight-deploy-final",
+      "status": "APPLIED",
+      "profile": "flat-d3d11-preflight",
+      "lock_digest": "edc43eeae1fe9081eaf8efb89299dbae981f745e7081be057aa25564be82a84b",
+      "target": "D:\\SteamLibrary\\steamapps\\common\\Oblivion",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "verify-20260918T074910Z-cd2372c557",
+      "type": "preflight-verify-final",
+      "status": "INVENTORIED",
+      "profile": "flat-d3d11-preflight",
+      "lock_digest": "edc43eeae1fe9081eaf8efb89299dbae981f745e7081be057aa25564be82a84b",
+      "failures": 0,
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "game-20260918T074948Z-ff0b3f03c6",
+      "type": "game-preflight-final",
+      "status": "BLOCKED_ENVIRONMENT",
+      "profile": "flat-d3d11-preflight",
+      "reason": "No explicit launch/readiness contract supplied; A01-A12 not run",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "test-20260918T074948Z-f170d10fce",
+      "type": "full-suite-preflight-final",
+      "status": "FAILED_OR_BLOCKED",
+      "suites": {
+        "unit": 15,
+        "integration": 2,
+        "game": "BLOCKED_ENVIRONMENT"
+      },
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "stage-20260918T082543Z-81876143eb",
+      "type": "primary-deploy",
+      "status": "APPLIED",
+      "profile": "flat-d3d11-primary",
+      "lock_digest": "2c5705f021cf9ab2f21565caba89a007af2a26ae6fd2bab8eb63f6b504e22e82",
+      "target": "D:\\SteamLibrary\\steamapps\\common\\Oblivion",
+      "journal": "D:\\SteamLibrary\\steamapps\\common\\Oblivion\\obdlss5-primary-install-journal.json",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "verify-20260918T082844Z-55d538d2ca",
+      "type": "primary-verify",
+      "status": "BLOCKED_RUNTIME",
+      "profile": "flat-d3d11-primary",
+      "lock_digest": "2c5705f021cf9ab2f21565caba89a007af2a26ae6fd2bab8eb63f6b504e22e82",
+      "failures": 0,
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "h0-dfc2-20260918T0826Z",
+      "type": "host-h0-primary",
+      "status": "BLOCKED_RUNTIME",
+      "profile": "flat-d3d11-primary",
+      "exit_code": 0,
+      "log_sha256": "d361b994f1bb445278eea2a074f08aead5fcdfc5551683619a77c53d5c4cd220",
+      "dfc_log_sha256": "d0620831cb71225caded883211d1657c1c3eb5e3e3031f8e01c7c453d81fc607",
+      "reason": "DFC 2.0.0 ARMED and 300/300 synthetic transport evaluations succeeded; NGX Feature 18 returned 0xBAD00001 FeatureNotSupported on RTX 4090 (minimum architecture 0x1B0).",
+      "evidence": "obdlss5/results/runs/h0-dfc2-20260918T0826Z",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "stage-20260918T083447Z-d23330222f",
+      "type": "primary-deploy-wrapper-final",
+      "status": "APPLIED",
+      "profile": "flat-d3d11-primary",
+      "lock_digest": "2c5705f021cf9ab2f21565caba89a007af2a26ae6fd2bab8eb63f6b504e22e82",
+      "target": "D:\\SteamLibrary\\steamapps\\common\\Oblivion",
+      "journal": "D:\\SteamLibrary\\steamapps\\common\\Oblivion\\obdlss5-primary-install-journal.json",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "verify-20260918T083502Z-3100450833",
+      "type": "primary-verify-final",
+      "status": "BLOCKED_RUNTIME",
+      "profile": "flat-d3d11-primary",
+      "lock_digest": "2c5705f021cf9ab2f21565caba89a007af2a26ae6fd2bab8eb63f6b504e22e82",
+      "failures": 0,
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "stage-20260918T090330Z-0b115f5bd5",
+      "type": "primary-deploy-sf-v2",
+      "status": "APPLIED",
+      "profile": "flat-d3d11-primary",
+      "lock_digest": "dac416313744c3d043d24622844c9ddec26db38970e232e81cf7258f43e2203b",
+      "target": "D:\\SteamLibrary\\steamapps\\common\\Oblivion",
+      "journal": "D:\\SteamLibrary\\steamapps\\common\\Oblivion\\obdlss5-primary-install-journal.json",
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "verify-20260918T090424Z-9194fcdd4d",
+      "type": "primary-verify-sf-v2",
+      "status": "INVENTORIED",
+      "profile": "flat-d3d11-primary",
+      "lock_digest": "dac416313744c3d043d24622844c9ddec26db38970e232e81cf7258f43e2203b",
+      "failures": 0,
+      "date": "2026-09-18"
+    },
+    {
+      "run_id": "h0-sf-v2-live-20260918T0905Z",
+      "type": "host-h0-primary-sf-v2",
+      "status": "NR_ACTIVE",
+      "profile": "flat-d3d11-primary",
+      "exit_code": 0,
+      "log_sha256": "c805a0c6a14cfaff434a8b3382ba4d1aff0d0af3f4ebff44d6ac4b7eb35a08a8",
+      "dfc_log_sha256": "eed1c1ef7bd1f6c1cc932e98418e442393a7215b732b019967276c37a56d31f0",
+      "reason": "Experimental SF-v2 runtime created and evaluated Feature 18 successfully on RTX 4090; DFC was ARMED and the host completed 300/300 synthetic evaluations.",
+      "evidence": "obdlss5/results/runs/h0-sf-v2-live-20260918T0905Z",
+      "date": "2026-09-18"
+    }
+  ]
+}

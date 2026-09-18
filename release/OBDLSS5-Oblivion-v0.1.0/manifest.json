@@ -1,0 +1,13 @@
+{
+  "product": "OBDLSS5 for classic Oblivion",
+  "version": "0.1.0",
+  "status": "experimental",
+  "scope": "Oblivion 2006 32-bit, flat screen, D3D9 through dgVoodoo D3D11",
+  "public_binary_redistribution": false,
+  "official_dlss5_gpu_floor": "GeForce RTX 50 Series according to NVIDIA's DLSS 5 hardware table",
+  "measured_experimental_gpu": "GeForce RTX 4090 with SF-v2 DLSSNR runtime",
+  "full_spec_release_gate": "partial",
+  "install_entrypoint": "Install-OBDLSS5.ps1",
+  "verify_entrypoint": "Verify-OBDLSS5.ps1",
+  "uninstall_entrypoint": "Uninstall-OBDLSS5.ps1"
+}
