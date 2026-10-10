@@ -3,6 +3,10 @@
 Experimental DLSS 5-style neural-rendering integration for classic 32-bit
 The Elder Scrolls IV: Oblivion.
 
+**Like it? Buy me a coffee on [Ko-fi](https://ko-fi.com/somadb).** (somadb is a
+different project I work on, but I confirm this Ko-fi link goes to me, the one
+who made OBDLSS5.)
+
 The public install kit is in
 [`release/OBDLSS5-Oblivion-v0.1.1/`](release/OBDLSS5-Oblivion-v0.1.1/).
 Start with its [English installation guide](release/OBDLSS5-Oblivion-v0.1.1/INSTALL.md).
