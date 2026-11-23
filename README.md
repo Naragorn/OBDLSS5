@@ -11,7 +11,7 @@ The public install kit is in
 [`release/OBDLSS5-Oblivion-v0.1.1/`](release/OBDLSS5-Oblivion-v0.1.1/).
 Start with its [English installation guide](release/OBDLSS5-Oblivion-v0.1.1/INSTALL.md).
 
-OBDLSS5-owned source, tooling, configuration and documentation are licensed under GNU GPL v3 or later, matching the companion OBVR project. Third-party components remain under their own licenses and are not relicensed by this repository.
+OBDLSS5-owned source, tooling, configuration and documentation are licensed under GNU GPL v3 or later, matching the companion [OBVR](https://github.com/Naragorn/OBVR) project. Third-party components remain under their own licenses and are not relicensed by this repository.
 
 This is not an official NVIDIA product. NVIDIA's official DLSS 5 3D-Guided
 Neural Rendering support is documented for GeForce RTX 50 Series GPUs. The
